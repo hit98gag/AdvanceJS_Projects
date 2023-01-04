@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+
+    }
+    .main{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-bottom: 2rem;
+
+    }
+    .imgadding{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 50%;
+        margin-top: 1rem;
+
+    }
+    h1{
+        margin-bottom: 1rem;
+    }
+
+    /* p{
+        margin-bottom: rem;
+    } */
+
+    button{
+        margin-top: 1rem;
+
+    }
+</style>
+<body>
+    <div id="main" class = "main">
+            <h1 style="color: green;">Geekster</h1>
+            <p> <b>Click on button to add image Element</b></p>
+            <button onclick="adding()">Click here</button>
+        
+    </div>
+</body>
+
+<script>
+
+    let main = document.getElementById("main");
+    function adding() {
+
+        let div = document.createElement("div");
+        let h1 = document.createElement("h1");
+        let img = document.createElement("img");
+        div.appendChild(h1)
+        div.appendChild(img)
+        div.classList.add("imgadding")
+        h1.innerHTML = "Image Element added."
+        h1.style.fontSize = "1.5rem"
+        h1.style.color="green"
+
+
+        img.src = "https://bl-i.thgim.com/public/incoming/89s94/article65661458.ece/alternates/FREE_1200/Geekster%20Logo%20new%20%281%29.png"
+        img.style.width = "25%";
+        img.style.height = "45%";
+
+
+        main.appendChild(div);
+        document.body.appendChild(main)
+
+
+
+    }
+</script>
+
+</html>
