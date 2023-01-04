@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+    <div class="box">1st child</div>
+    <div class="box">2nd child</div>
+    <div class="box">3rd child</div>
+    <div class="box">4th child</div>
+    <div class="box">5th child</div>
+    <div class="box">6th child</div>
+    <div class="box">7th child</div>
+    <div class="box">8th child</div>
+    <div class="box">9th child</div>
+    <div class="box">10th child</div>
+    <div class="box">11th child</div>
+    <div class="box">12th child</div>
+    <div class="box">13 child</div>
+    <div class="box">14 child</div>
+    <div class="box">15 child</div>
+    <div class="box">16 child</div>
+    <div class="box">17 child</div>
+    <button onclick="clickHandler()">click me</button>
+
+</div>
+    <style>
+
+    .container {
+
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 5px;
+        margin:5px; 
+    }
+
+        .box{
+            width:100px;
+            height : 40px; 
+            border:1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+
+    <script>
+
+        function clickHandler(){
+
+            let allBoxes = document.getElementsByClassName("box");
+            for(let i=0 ;i<allBoxes.length;i++){
+                if(i%2==1){
+                    //allBoxes[i].setAttribute('style','background-color:lime')
+                    allBoxes[i].style.backgroundColor='lime';
+
+                    allBoxes[i].style.color='white';
+                }
+
+            }
+            allBoxes[0].setAttribute("style",'background-color:blue')
+            allBoxes[allBoxes.length-1].setAttribute("style",'background-color:palevioletred')
+
+        }
+    </script>
+</body>
+</html>
