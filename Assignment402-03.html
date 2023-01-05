@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping list</title>
+</head>
+  
+<body>
+    <div class = main>
+        <h1>My Shopping List</h1>
+        Enter new Element: <input type="text" id="input">
+        <button onclick="addList()">Add item</button>
+        <ul id="list"></ul>
+    </div>
+
+    <script>
+      let i =1;
+        function addList(){
+            let val = document.getElementById("input").value;
+            let item = document.createElement("li");
+            item.innerHTML = val;
+            let button = document.createElement("button");
+            button.setAttribute("class",`item${i}`)
+            button.innerHTML = "Delete"
+            button.addEventListener("click",(e) =>{
+                div.remove();
+            })
+        
+
+        let div = document.createElement("div");
+        div.setAttribute("class",`item${i}`)
+        div.appendChild(item);
+        div.appendChild(button);
+        div.style.display="flex";
+        let list = document.getElementById("list");
+        list.appendChild(div);
+        i++;
+        }
+
+    </script>
+</body>
+</html>
