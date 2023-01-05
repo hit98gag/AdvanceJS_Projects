@@ -52,21 +52,25 @@
             <h1 style="color: green;">Geekster</h1>
             <p> <b>Click on button to add image Element</b></p>
             <button onclick="adding()">Click here</button>
+
+            <div id="imageAdded" class="imageAdded">
+
+            </div>
         
     </div>
 </body>
 
 <script>
 
-    let main = document.getElementById("main");
-    function adding() {
-
+    let imageAdded = document.getElementById("imageAdded");
+     function adding() {
+        imageAdded.innerHTML = "";
         let div = document.createElement("div");
+        div.classList.add("imgadding")
         let h1 = document.createElement("h1");
         let img = document.createElement("img");
         div.appendChild(h1)
         div.appendChild(img)
-        div.classList.add("imgadding")
         h1.innerHTML = "Image Element added."
         h1.style.fontSize = "1.5rem"
         h1.style.color="green"
@@ -77,8 +81,7 @@
         img.style.height = "45%";
 
 
-        main.appendChild(div);
-        document.body.appendChild(main)
+        imageAdded.appendChild(div);
 
 
 
