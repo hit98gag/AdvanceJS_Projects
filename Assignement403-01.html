@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+    }
+
+    .mainconatiner {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .head1 {
+        width: 25rem;
+        height: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 2px 2px 5px gray;
+
+
+
+
+    }
+
+    .head2 {
+        color: green;
+        margin-top: 4rem;
+        width: 8rem;
+        height: 10rem;
+        margin-left: 8rem;
+        box-shadow: 2px 2px 5px gray;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 3rem;
+
+    }
+
+    .chn {
+        color: green;
+        display: inline;
+        margin-left: .5rem;
+    }
+    .divison1{
+        border: px solid red;
+        padding-right: 7rem;
+    }
+</style>
+
+<body>
+    <div class="mainconatiner">
+        <div id="division">
+            <h1 id="head1" class="head1"> Press Any KeyBoard Key</h1>
+        </div>
+
+        <div class="divison1" id="divison1">
+
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("keypress", (event) => {
+            const divison1 = document.getElementById("divison1")
+            divison1.innerHTML=""
+
+            var name = event.key
+            let head1 = document.getElementById("head1");
+            head1.innerHTML = `You Pressed <div class="chn"> ${name}</div>`
+            
+            const head2 = document.createElement("h2");
+            head2.classList.add("head2")
+            head2.setAttribute("id", "head2")
+            
+            divison1.appendChild(head2)
+            
+            var charcode = event.charCode
+
+            //    let head2 = document.getElementById("head2")
+
+            head2.innerHTML = charcode
+        })
+
+
+
+    </script>
+</body>
+
+</html>
