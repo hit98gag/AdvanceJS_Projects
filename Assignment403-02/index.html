@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Rubik+Bubbles&family=Source+Serif+Pro:wght@900&display=swap");
+    </style>
+  </head>
+  <body>
+    <div class="mainContainer">
+      <div class="heading">Drum Kit</div>
+      <div class="buttons">
+        <div class="bgnd"><button id="button1" class="Drum">w</button></div>
+
+        <div class="bgnd"><button id="button2" class="Drum">a</button></div>
+
+        <div class="bgnd"><button id="button3" class="Drum">s</button></div>
+
+        <div class="bgnd"><button id="button4" class="Drum">d</button></div>
+
+        <div class="bgnd"><button id="button5" class="Drum">j</button></div>
+
+        <div class="bgnd"><button id="button6" class="Drum">k</button></div>
+
+        <div class="bgnd"><button id="button7" class="Drum">l</button></div>
+      </div>
+    </div>
+
+    <script>
+      let buttonclick = document.getElementsByClassName("Drum");
+
+      for (let i = 0; i < buttonclick.length; i++) {
+        buttonclick[i].addEventListener("click", () => {
+          // console.log( buttonclick[i].innerHTML);
+
+          playSound(buttonclick[i].innerHTML);
+        });
+      }
+
+      function playSound(letter) {
+        if (letter == "w") {
+          const audio = new Audio("sounds/buzz.mp3");
+          audio.play();
+        }
+
+        if (letter == "a") {
+          const audio = new Audio("sounds/buzzer.mp3");
+          audio.play();
+        }
+        if (letter == "s") {
+          const audio = new Audio("sounds/crash.mp3");
+          audio.play();
+        }
+        if (letter == "d") {
+          const audio = new Audio("sounds/crock.mp3");
+          audio.play();
+        }
+        if (letter == "j") {
+          const audio = new Audio("sounds/kick-bass.mp3");
+          audio.play();
+        }
+        if (letter == "k") {
+          const audio = new Audio("sounds/pin.mp3");
+          audio.play();
+        }
+        if (letter == "l") {
+          const audio = new Audio("sounds/snare.mp3");
+          audio.play();
+        }
+      }
+    </script>
+  </body>
+</html>

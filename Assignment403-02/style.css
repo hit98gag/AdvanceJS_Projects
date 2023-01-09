@@ -1,0 +1,96 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    background-color: #283149;
+}
+.mainContainer{
+    /* border: 2px solid red; */
+    height: 100vh;
+
+}
+.heading{
+    /* border: 2px solid blue; */
+    height: 20%;
+    font-family: 'Source Serif Pro', serif;
+   font-size: 5rem;
+   display: flex;
+   justify-content: center;
+   padding-top: 80px;
+   padding-bottom:-20px ;
+   color: white;
+   text-shadow: 2px 2px red;
+
+}
+
+.buttons{
+    /* border: 2px solid green; */
+    height: 68%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.bgnd{
+    border:px solid red;
+    height: 8rem;
+    width: 8rem;
+    background-color: #404b69;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin: 15px;
+
+}
+
+.Drum{
+    width: 8rem;
+    height: 8rem;
+    font-size: 4.5rem;
+    color: #da0463 ; 
+    text-shadow: 2px 2px white;
+    font-family: 'Source Serif Pro', serif;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+
+
+}
+
+#button1{
+   height: 90%;   
+   width: 90%;
+    background-image: url("images/crash.png");
+    
+}
+#button2{
+     height: 90%;   
+   width: 90%;
+    background-image: url("images/kick.png");
+}
+#button3{
+     height: 90%;   
+   width: 90%;
+    background-image: url("images/snare.png");
+}
+#button4{
+     height: 90%;   
+   width: 90%;
+    background-image: url("images/tom1.png");
+}
+#button5{
+     height: 90%;   
+   width: 90%;
+    background-image: url("images/tom2.png");
+}
+#button6{
+     height: 90%;   
+   width: 90%;
+    background-image: url("images/tom3.png");
+}
+#button7{
+     height: 90%;   
+   width: 90%;
+    background-image: url("images/kick.png");
+}
