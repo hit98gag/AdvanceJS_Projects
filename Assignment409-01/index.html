@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Form Validation check</title>
+</head>
+
+
+<body>
+    <div class="mainContainer">
+        <div class="subContainer">
+            <div class="heading">
+                <h1> <u>Validating Web Forms</u> </h1>
+            </div>
+
+            <div class="fname stlyn">
+                <h3>First Name</h3>
+                <input onkeyup="Submit()" type="text" id="firstName" class="inputC" />
+                <div class="lowerdiv">
+                    <p id ="ferror"></p>
+                    
+                </div>
+            </div>
+
+            <div class="lname stlyn">
+                <h3>Last Name</h3>
+
+                <input onkeyup="Submit()" type="text" id="lastName" class="inputC" />
+                <div class="lowerdiv">
+                    
+                    <p id ="lerror"></p>
+                </div>
+
+            </div>
+
+            <div class="email stlyn">
+                <h3>Email</h3>
+
+                <input onkeyup="Submit()" type="text" id="email" class="inputC" />
+                <div class="lowerdiv">
+                    
+                    <p id="emailError"></p>
+                </div>
+
+            </div>
+
+            <div class="password stlyn">
+                <h3>Password</h3>
+
+                <input onkeyup="Submit()" type="password" id="password" class="inputC" />
+                <div class="lowerdiv">
+                    
+                    <p id="passError"></p>
+                </div>
+
+            </div>
+
+            <div class="tphone stlyn">
+                <h3>Telephone</h3>
+
+                <input onkeyup="Submit()" type="text" id="Telephone" class="inputC" />
+                <div class="lowerdiv">
+                    
+                    <p id="teleerror"></p>
+                </div>
+            </div>
+
+
+            <div class="bio stlyn">
+                <h3>Your Bio</h3>
+                <input onkeyup="Submit()" type="text" id="bio" class="inputC" />
+                <div class="lowerdiv">
+
+                    <p id="bioerror"></p>
+                </div>
+
+            </div>
+
+            <div class="submitDiv">
+                <button class ="buttonstyle" type="submit" id="submit" onclick="Submit()">Submit</button>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
