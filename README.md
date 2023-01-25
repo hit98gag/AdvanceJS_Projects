@@ -13,3 +13,9 @@ Emojee Search => https://hit98gag.github.io/AdvanceJS_Projects/Assignment407-01/
 
 
 AddPlayersApp => https://hit98gag.github.io/AdvanceJS_Projects/Assignment408-01/index.html
+
+
+Dictonary app => https://hit98gag.github.io/AdvanceJS_Projects/Assignment410-02/index.html
+
+
+Random Quote Generator => https://hit98gag.github.io/AdvanceJS_Projects/Assignment410-05/index.html
